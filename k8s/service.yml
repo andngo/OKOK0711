@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ray
+  name: dhbmrt
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "ray"
+  - name: "dhbmrt"
     port: 8080
   selector:
-    app: ray
+    app: dhbmrt
